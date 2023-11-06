@@ -22,9 +22,69 @@ Partial Class frmHighScore
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        components = New System.ComponentModel.Container
+        Me.lblMessage = New System.Windows.Forms.Label()
+        Me.lstHighScore = New System.Windows.Forms.ListBox()
+        Me.btnAgain = New System.Windows.Forms.Button()
+        Me.btnQuit = New System.Windows.Forms.Button()
+        Me.SuspendLayout()
+        '
+        'lblMessage
+        '
+        Me.lblMessage.AutoSize = True
+        Me.lblMessage.Font = New System.Drawing.Font("Modern No. 20", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMessage.Location = New System.Drawing.Point(130, 47)
+        Me.lblMessage.Name = "lblMessage"
+        Me.lblMessage.Size = New System.Drawing.Size(0, 21)
+        Me.lblMessage.TabIndex = 0
+        '
+        'lstHighScore
+        '
+        Me.lstHighScore.Font = New System.Drawing.Font("Bell MT", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lstHighScore.FormattingEnabled = True
+        Me.lstHighScore.ItemHeight = 25
+        Me.lstHighScore.Location = New System.Drawing.Point(67, 120)
+        Me.lstHighScore.Name = "lstHighScore"
+        Me.lstHighScore.Size = New System.Drawing.Size(463, 229)
+        Me.lstHighScore.TabIndex = 1
+        '
+        'btnAgain
+        '
+        Me.btnAgain.Font = New System.Drawing.Font("Modern No. 20", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAgain.Location = New System.Drawing.Point(669, 327)
+        Me.btnAgain.Name = "btnAgain"
+        Me.btnAgain.Size = New System.Drawing.Size(102, 44)
+        Me.btnAgain.TabIndex = 2
+        Me.btnAgain.Text = "Again"
+        Me.btnAgain.UseVisualStyleBackColor = True
+        '
+        'btnQuit
+        '
+        Me.btnQuit.Font = New System.Drawing.Font("Modern No. 20", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnQuit.Location = New System.Drawing.Point(669, 394)
+        Me.btnQuit.Name = "btnQuit"
+        Me.btnQuit.Size = New System.Drawing.Size(102, 44)
+        Me.btnQuit.TabIndex = 3
+        Me.btnQuit.Text = "Quit"
+        Me.btnQuit.UseVisualStyleBackColor = True
+        '
+        'frmHighScore
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.btnQuit)
+        Me.Controls.Add(Me.btnAgain)
+        Me.Controls.Add(Me.lstHighScore)
+        Me.Controls.Add(Me.lblMessage)
+        Me.Name = "frmHighScore"
         Me.Text = "frmHighScore"
+        Me.ResumeLayout(False)
+        Me.PerformLayout()
+
     End Sub
+
+    Friend WithEvents lblMessage As Label
+    Friend WithEvents lstHighScore As ListBox
+    Friend WithEvents btnAgain As Button
+    Friend WithEvents btnQuit As Button
 End Class
