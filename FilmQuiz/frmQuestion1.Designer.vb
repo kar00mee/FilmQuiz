@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class frmQuestion1
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,8 +20,9 @@ Partial Class frmQuestion1
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmQuestion1))
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.btnNext = New System.Windows.Forms.Button()
@@ -31,6 +32,8 @@ Partial Class frmQuestion1
         Me.btnAnswer3 = New System.Windows.Forms.RadioButton()
         Me.btnAnswer4 = New System.Windows.Forms.RadioButton()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.ProgressBarQ1 = New System.Windows.Forms.ProgressBar()
+        Me.trmQuestion1 = New System.Windows.Forms.Timer(Me.components)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
@@ -125,11 +128,23 @@ Partial Class frmQuestion1
         Me.GroupBox1.TabIndex = 7
         Me.GroupBox1.TabStop = False
         '
+        'ProgressBarQ1
+        '
+        Me.ProgressBarQ1.Location = New System.Drawing.Point(305, 393)
+        Me.ProgressBarQ1.Name = "ProgressBarQ1"
+        Me.ProgressBarQ1.Size = New System.Drawing.Size(195, 23)
+        Me.ProgressBarQ1.TabIndex = 8
+        '
+        'trmQuestion1
+        '
+        Me.trmQuestion1.Interval = 1000
+        '
         'frmQuestion1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.ProgressBarQ1)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.lblTitle)
         Me.Controls.Add(Me.btnNext)
@@ -152,4 +167,6 @@ Partial Class frmQuestion1
     Friend WithEvents btnAnswer3 As RadioButton
     Friend WithEvents btnAnswer4 As RadioButton
     Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents ProgressBarQ1 As ProgressBar
+    Friend WithEvents trmQuestion1 As Timer
 End Class
