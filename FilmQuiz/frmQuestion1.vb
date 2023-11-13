@@ -1,9 +1,14 @@
 ﻿Public Class frmQuestion1
 
+
+
+
     Public Sub init()
+
         progressCount = 0
         trmQuestion1.Enabled = True
         ProgressBarQ1.Value = 0
+        frmMain.playTrack("question1.mp3")
         btnAnswer1.Checked = False
         btnAnswer2.Checked = False
         btnAnswer3.Checked = False

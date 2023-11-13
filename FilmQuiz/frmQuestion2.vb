@@ -7,6 +7,7 @@
         progressCount = 0
         trmQuestion2.Enabled = True
         ProgressBarQ2.Value = 0
+        frmMain.playTrack("question2.mp3")
         btnAnswer1.Checked = False
         btnAnswer2.Checked = False
         btnAnswer3.Checked = False

@@ -1,6 +1,5 @@
 ﻿Public Class frmQuestion3
 
-
     Public Sub init()
 
 
@@ -31,6 +30,7 @@
             MsgBox("Time Out")
             frmHighScore.Show()
             frmHighScore.doScore()
+            frmMain.stopTrack()
         End If
     End Sub
 End Class
